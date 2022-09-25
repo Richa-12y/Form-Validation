@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Form Validation</title>
+     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+     <!-- Create a simple sign up form with four input fields: username, email,password,
+          confirm password and when you click the sign up without filling 
+          anything or incorrect data, the form will show an error message.
+          To validate the password you can use RegEx.  -->
+          <div class="form-container">
+               <div class="signup-container">
+                    <img src="./img/logo.png" alt="logo"/>
+               </div>
+          <div class="form-inside-container">
+               <div class="inside-input-container">
+               <span>
+                    <h1>Sign up form</h1>
+               </span>
+               <div class="input-container">
+                    <input type="text" id="input" placeholder="Enter your name"  >
+                    <div>
+                         <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    
+               </div>
+               <div class="input-container">
+                    <input type="email" id="email" placeholder="Enter your email"  >
+                    <div>
+                         <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+               </div>
+               <div class="input-container">
+                    <input type="text" id="phone-number" placeholder="Enter your Mobile Number"  >
+                    <div>
+                         <i class="fa fa-tty" aria-hidden="true"></i>
+                    </div>
+
+               </div>
+               <div class="input-container">
+                    <input class="password" type="password" id="password" placeholder="Enter your password"  >
+                    <div>
+                         <i id="eye-slash" class="fa fa-eye"aria-hidden="true"></i>
+                         <i id="eye-slash-container"class="fa fa-eye-slash"aria-hidden="true"></i>
+                    </div>
+
+
+               </div>
+               <div class="input-container">
+                    <input type="password" id="confirm-password" placeholder="Enter your password"  >
+                    <div>
+                         <i id="eye-slash-c" class="fa fa-eye"aria-hidden="true"></i>
+                         <i id="eye-slash-container-c" class="fa fa-eye-slash"aria-hidden="true"></i>
+                    </div>
+
+               </div>
+              <div class="error-container">
+                   <i id="error-icon" class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                   <div id="errorBlock-container">
+                    <!-- <i id="error-icon" class="fa fa-exclamation-circle" aria-hidden="true"></i> -->
+
+                   </div>
+              </div>
+               <div class="button-container">
+               <button>Submit</button>
+               </div>
+          </div>
+          </div>
+          </div>
+  <script src="./script.js"></script>   
+</body>
+</html>
