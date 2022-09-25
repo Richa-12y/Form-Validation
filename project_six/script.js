@@ -50,7 +50,7 @@ targetButton.addEventListener("click",()=>{
      let password=document.getElementById('password').value
      let isValidPassword=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()+=-\?;,./{}|\":<>\[\]\\\' ~_]).{8,}/.test(password)
     //it will check both password are same or not
-    let confirmPassword=document.getElementById('confirm-password')
+    let confirmPassword=document.getElementById('confirm-password').value
 // '12sas7'
 console.log(password)
 
